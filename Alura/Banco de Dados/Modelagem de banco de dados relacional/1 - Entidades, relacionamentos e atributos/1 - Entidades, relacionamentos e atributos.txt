@@ -1,0 +1,121 @@
+##################################################
+					01. SGBD
+##################################################
+
+O que um Banco de Dados? 
+	- "Coleção de dados relacionados".
+	- São coleções de informações que se relacionam de forma que crie um sentido.
+
+	- Caracteríticas:
+		- Representa o aspecto de algo do mundo real.
+		- Coleção logicamente coerente de dados.
+		- Projetando para uma finalidade específica
+
+O que é um SGBD?
+	- Sistema de Gerenciamento de Banco de Dados.
+	-  Sistema computacional que permite que usuários mantenham um banco de dados.
+	- permite definir, construir, manipular e compartilhar o banco de dados.
+		- Definição: Especificar tipos, estruturas e restrições dos dados armazenados (Metadados).
+		- Construção: Processo de armazenar os dados em algum meio.
+		- Manipulação: Funções de consulta, recuperar dados, atualizar dados, ou seja, refletir as mudanças no mundo real.
+		-Compartilhamento: Usuários e programas acessem o Banco de dados simultaneamente.
+
+Abstração de Dados: 
+	- Suprimir ao usuário detalhes da organização e armazenamento dos dados. O modelo de dados permite esta abstração.
+		- Modelos de Alto Nivel: Como muito usuário vizualizam seus dados (Entidade, atributos e relazionamentos).
+		- Modelos de Baixo Nivel: Detalhes de como os dados são armazendados no computador (Acesso a estrutura de armazenamento e índices).
+		- Modelos de Dados Representativos: Dados compreendidos pelos usuários finais e "não esta muito longe do modo que os dados estão armazendados no computador" (Linguagem SQL).
+
+Esquema de Banco de Dados:
+	- Refere-se a descrição do banco de dados. Normalmente não muda.
+	- Snapshot: Como é chamado o estado atual dos dados do banco de dados.
+
+
+
+##################################################
+					02. Entidades
+##################################################
+
+Entendade e Relacionamento:
+	- Entidade
+		- Representa uma coisa ou objeto do mundo real com uma existencia independente.
+		- Pode possuir uma existencia física ou conceitual.
+		- Cada Entidade possui Atributos, eles descrevem as entidades.
+		- Entidade Forte: Com atributo Chave.
+		- Entidade Fraca: São entidades sem Atributos Chave.
+			- Sempre estará associada a uma Entidade Forte.
+
+	- Atributos:
+		- Representa as características de uma Entidade.
+		- Atributos compostos: Podem ser subpartes menores, representam atributos mais básicos.
+		- Atributos simples: São básicos, não divisiveis.  
+		- Atributos valor unico: Valores simples
+		- Atributos multivalorados: Podem ter mais de um valor associado a eles.
+		- Atributos armazenados: Tem seu valor diretamente fornecido
+		- Atributos derivados: Dependem de outros atributos e entidades.
+		- Atributos Null: Desconhecidos ou não aplicáveis.
+
+Representação gráfica:
+	- Entidade: Retangulo
+	- Atributo: Círculo Oval
+	- Atributos e Entidades são ligados por linhas retas.
+	- Atributos Composto: são ligados a seus Atributos por linhas retas.
+	- Atributos Multivalorados: Círculos Ovais Duplos.
+	- Atributos Derivados: Círculo Oval Sublinhado.
+	- Atributos Chaves: São sublinhados.
+
+
+
+##################################################
+				03. Relacionamentos
+##################################################
+
+Relacionamento Entre as Entidades:
+	- Grau de um relacionamento: É o número de entidades envolvidas no relacionamento.
+	- Nome dos Papéis: São os verbos que identificam o relacionamento.
+	- Relacionamento recursivo: Uma entidade se relaciona com ela mesma.
+	- Relacionamento de identificação: Relacionamento enre uma Entidade Fraca e sua Proprietária.
+
+Cardinalidade:
+	- Cardinalidade minima: Entidade depende de outra para existir
+	- Cardinalidade parcial: Não depende de outra entidade para existir
+
+
+Representação gráfica:
+	- Relacionamento: Losangulo
+	- Cardinalidade:
+		- É posto em parenteses os valores minimos e máximos.
+		- Cardinalidade parcial: Linha reta
+			- Quando o valor minimo mostrado entre parenteses é igual a 0.
+		- Cardinalidade minima: Linha dupla
+	- Relacionamento de identificação/Relacionamentos de Atributos Chaves: Losangulo Duplo
+	- Entidade Fraca: Retangulo Duplo
+	- Chave complementar (Estrangeira): Sublinhado Pontilhado.
+
+
+
+##################################################
+				04. Nomeclatura
+##################################################
+
+Generalização/Especialização:
+	- Atribuir propriedades particulares a uma Entidade
+
+Representação gráfica:
+	- Generalização/Especialização: Triangulo.
+
+
+
+##################################################
+				05. Estudo de Caso
+##################################################
+
+*
+
+
+
+##################################################
+		  05. Finalizando o Estudo de Caso
+##################################################
+
+*

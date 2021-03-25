@@ -127,3 +127,4 @@ STATICFILES_DIRS = [
 ]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'simplemoc', 'media')
+MEDIA_URL = '/media/'

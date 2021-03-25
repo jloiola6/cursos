@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse #Usado no get_absolute_url
 
 # Create your models here.
 
@@ -12,7 +13,8 @@ class Course(models.Model):
 
     name = models.CharField('Nome', max_length= 100)
     slug = models.SlugField('Atalho')
-    description = models.TextField('Descricao')
+    description = models.TextField('Descricao Simples')
+    about = models.TextField('Sobre o Curso', blank= True)
     start_date = models.DateField('Data de Inicio', null= True, blank= True)
     image = models.ImageField(upload_to= 'courses/images', verbose_name= 'Imagens', null= True, blank= True)
 
@@ -23,6 +25,10 @@ class Course(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_absolute_url(self):
+        return reverse("courses:details", kwargs={"slug": self.slug})
+    
 
     class Meta:
         verbose_name = 'Curso'

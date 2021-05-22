@@ -21,5 +21,5 @@ function imprimirNomeGritando(obj) {
     }
 }
 
-const obj = { nome: 'Roberto' } // NOte que foi criado a chave "nome"
+const obj = { name: 'Roberto' } // NOte que foi criado a chave "nome"
 imprimirNomeGritando(obj)
